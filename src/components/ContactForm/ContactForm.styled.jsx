@@ -1,11 +1,6 @@
 import styled from '@emotion/styled';
-import {
-  Form as FormikForm,
-  Field as FormikField,
-  ErrorMessage as FormikError,
-} from 'formik';
 
-export const Form = styled(FormikForm)`
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -27,7 +22,7 @@ export const FormField = styled.label`
   width: 200px;
 `;
 
-export const Field = styled(FormikField)`
+export const Field = styled.input`
   margin-top: 5px;
   outline: grey;
   border: 1px solid grey;
@@ -53,9 +48,4 @@ export const Button = styled.button`
     background-color: blue;
     border: none;
   }
-`;
-
-export const ErrorMessage = styled(FormikError)`
-  font-size: 12px;
-  color: tomato;
 `;
